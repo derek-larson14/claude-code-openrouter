@@ -1,0 +1,10 @@
+# Environment variables
+.env
+
+# IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Claude Code settings
+.claude/settings.local.json
