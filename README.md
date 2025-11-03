@@ -8,8 +8,7 @@ Simply mention the model name (add "external-llm" to your prompt if it is not tr
 
 - "Use **kimi** to write a blog post about AI"
 - "Ask **grok** to explain quantum computing"
-- "Have **gemini** analyze this data"
-- "Generate a marketing doc with gemini and context.md from the marketing folder use external-llm"
+- "Generate a marketing presentation with gemini and @marketing/project-plan.md as context use external-llm"
 
 The agent will:
 1. Detect when you mention an external model
