@@ -4,11 +4,11 @@ Use external LLMs (Kimi, Grok, Gemini, GLM, GPT-5) directly from Claude Code by 
 
 ## How It Works in Claude Code
 
-Simply mention the model name (add "external-llm" to your prompt if it is not triggering):
-
 - "Use **kimi** to write a blog post about AI"
 - "Ask **grok** to explain quantum computing"
 - "Generate a marketing presentation with gemini and @marketing/project-plan.md as context use external-llm"
+
+Note: add "external-llm" to your prompt if it is not triggering.
 
 The agent will:
 1. Detect when you mention an external model
