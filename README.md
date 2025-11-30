@@ -9,7 +9,7 @@ Use external LLMs (Kimi, Grok, Gemini, GLM, GPT-5) directly from Claude Code by 
 Clone this repo and add your API key:
 
 ```bash
-git clone https://github.com/dereklarson/claude-code-openrouter.git external-llm-agent
+git clone https://github.com/derek-larson14/claude-code-openrouter.git external-llm-agent
 cd external-llm-agent
 echo "OPENROUTER_API_KEY=your-key-here" > .env
 ```
@@ -21,7 +21,7 @@ Get your API key from [OpenRouter.ai](https://openrouter.ai)
 Run this from your project directory:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/dereklarson/claude-code-openrouter/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/derek-larson14/claude-code-openrouter/main/install.sh | bash
 ```
 
 Then add your API key:
