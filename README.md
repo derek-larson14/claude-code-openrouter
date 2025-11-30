@@ -2,53 +2,44 @@
 
 Use external LLMs (Kimi, Grok, Gemini, GLM, GPT-5) directly from Claude Code by mentioning them in your prompts.
 
-## How It Works in Claude Code
+## Setup
 
-Simply mention the model name (add "external-llm" to your prompt if it is not triggering):
+### New Project
 
-- "Use **kimi** to write a blog post about AI"
-- "Ask **grok** to explain quantum computing"
-- "Generate a marketing presentation with gemini and @marketing/project-plan.md as context use external-llm"
+Clone this repo and add your API key:
 
-The agent will:
-1. Detect when you mention an external model
-2. Extract your actual request
-3. Call the model via OpenRouter API
-4. Save the response to `llm-outputs/` (or a custom path)
-5. Show you the file location
+```bash
+git clone https://github.com/dereklarson/openrouter-claude-code.git external-llm-agent
+cd external-llm-agent
+echo "OPENROUTER_API_KEY=your-key-here" > .env
+```
 
-> **First Use:** Claude Code will ask for approval the first time it runs `openrouter.sh`. Select option 2 ("Yes, and don't ask again...") to auto-approve future calls.
+Get your API key from [OpenRouter.ai](https://openrouter.ai)
 
-## Quick Setup
+### Existing Project
 
-### 1. Get an API key from [OpenRouter.ai](https://openrouter.ai)
+Run this from your project directory:
 
-### 2. Save your API key
+```bash
+curl -sL https://raw.githubusercontent.com/dereklarson/openrouter-claude-code/main/install.sh | bash
+```
+
+Then add your API key:
 ```bash
 echo "OPENROUTER_API_KEY=your-key-here" > .env
 ```
 
-That's it! Now you can use external models in Claude Code.
+## Usage
 
-## Adding to an Existing Project
+In Claude Code, just mention the model name:
 
-To integrate into your existing Claude Code project:
+- "Use **kimi** to write a blog post about AI"
+- "Ask **grok** to explain quantum computing"
+- "Have **gemini** create a marketing presentation and use @marketing/project-plan.md as context"
 
-1. **Copy these files to your project root:**
-   - `openrouter.sh` - The CLI script
-   - `models.conf` - Model configuration
-   - `CLAUDE.md` - Context file (optional. Append to your existing CLAUDE.md if you have one)
+Add "external-llm" to your prompt if it doesn't trigger automatically.
 
-2. **Copy the agent configuration:**
-   ```bash
-   cp -r .claude/agents/external-llm.md your-project/.claude/agents/
-   ```
-
-3. **Add to your .gitignore:**
-   ```
-   .env
-   llm-outputs/
-   ```
+> **First Run:** Claude Code will ask for approval the first time. Select "Yes, and don't ask again..." to auto-approve future calls.
 
 ## Available Models
 
