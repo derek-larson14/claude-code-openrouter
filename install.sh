@@ -3,7 +3,7 @@
 
 set -e
 
-REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/dereklarson/openrouter-claude-code/main}"
+REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/dereklarson/claude-code-openrouter/main}"
 
 echo "Installing external LLM agent..."
 
