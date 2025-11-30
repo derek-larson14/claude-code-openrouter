@@ -1,4 +1,4 @@
-# External LLMs
+### External LLMs
 
 To use external models (kimi, grok, grok-fast, glm, gemini, gpt-5), just mention them in your response:
 
@@ -8,4 +8,4 @@ To use external models (kimi, grok, grok-fast, glm, gemini, gpt-5), just mention
 
 Add "external-llm" if not triggering automatically.
 
-Never run openrouter.sh directly - the agent handles everything.
+Never run openrouter.sh or install.sh directly - the agent handles everything.
